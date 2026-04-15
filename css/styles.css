@@ -88,6 +88,8 @@ legend {
 
 /* Hero */
 
+/* Menu */
+
 .hero-section {
   padding-top: 72px;
   padding-bottom: 72px;
@@ -346,7 +348,6 @@ legend {
 }
 
 /* Footer */
-/* Не зроблений */
 
 .footer-section {
   background: #2e2f42;
@@ -356,7 +357,7 @@ legend {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
@@ -386,7 +387,7 @@ legend {
   max-width: 288px;
 }
 
-.footer-soc-descr {
+.footer-cos-descr {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -423,26 +424,22 @@ legend {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
-  align-items: baseline;
+  justify-content: center;
 }
 
-.footer-column-wrap:last-child {
-  margin-left: auto;
-}
-
-.footer-column-wrap:nth-child(2n) {
-  margin-left: 120px;
-}
 .footer-column-wrap {
   display: flex;
   flex-direction: column;
-  row-gap: 16px;
-  align-items: start;
+  gap: 16px;
+  align-items: center;
 }
+
 .footer-form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 16px;
 }
 
 .footer-input {
@@ -452,8 +449,8 @@ legend {
   outline: transparent;
   background-color: transparent;
   padding: 8px 16px;
-  margin-right: 24px;
-  min-width: 264px;
+  /* margin-right: 24px; */
+  min-width: 288px;
 
   font-weight: 400;
   font-size: 12px;
