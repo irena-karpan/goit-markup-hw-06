@@ -176,28 +176,12 @@ legend {
 } */
 
 .mobile-menu-container {
-}
-/* .mob-menu-close-btn {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-
+  position: relative;
+  padding-block: 72px 40px;
+  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  transition-property: background-color, border-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  flex-direction: column;
 }
-.mob-menu-close-icon {
-  fill: #2e2f42;
-} */
 
 .close-icon-btn {
   position: absolute;
@@ -233,14 +217,13 @@ legend {
 .close-icon-btn:focus .close-icon {
   fill: #fff;
 }
+
 .mob-menu-nav-container {
-  margin-top: 72px;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.mob-menu-nav-item {
-}
+
 .mob-menu-nav-link {
   font-weight: 700;
   font-size: 36px;
@@ -254,6 +237,7 @@ legend {
 }
 
 .mob-menu-address {
+  margin-top: auto;
   font-style: normal;
 }
 .mob-menu-address-container {
@@ -286,8 +270,7 @@ legend {
   gap: 40px;
   align-items: center;
 }
-.mob-menu-icon-item {
-}
+
 .mob-menu-icon-link {
   display: block;
   background-color: #4d5ae5;
@@ -719,6 +702,8 @@ legend {
 }
 
 /* Modal */
+
+.
 
 /* -----Tablet----- */
 
