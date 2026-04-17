@@ -349,12 +349,8 @@ legend {
   display: flex;
   /* flex-direction: column; */
   flex-wrap: wrap;
-  gap: 72px;
+  row-gap: 72px;
   align-items: center;
-}
-
-.features-item {
-  flex-basis: calc((100% - 72) / 1);
 }
 
 .features-title {
@@ -386,7 +382,7 @@ legend {
 .team-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
@@ -401,7 +397,7 @@ legend {
   /* flex-direction: column; */
   align-items: center;
   flex-wrap: wrap;
-  gap: 72px;
+  row-gap: 72px;
 }
 .team-descr-container {
   padding: 32px 16px;
@@ -432,7 +428,6 @@ legend {
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
   /* max-width: 100%; */
-  flex-basis: calc((100% - 72px) / 1);
   border-radius: 0 0 4px 4px;
 }
 /* .team-list-item > img {
@@ -1061,25 +1056,51 @@ legend {
   }
 
   /* Hero */
+  /* done */
 
   .hero-section {
-    padding-top: 112px;
-    padding-bottom: 112px;
-    /* min-width: 768px;
-    min-height: 436px; */
-    /* background-size:; */
+    padding-block: 112px;
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero-back-tabl.jpg);
   }
-
   .hero-title {
     font-size: 56px;
-    line-height: 1.07143;
+    line-height: 1.07;
     max-width: 496px;
     margin-bottom: 36px;
   }
 
   /* Our Features */
+  /* done */
+
+  .features-list {
+    column-gap: 24px;
+  }
+
+  .features-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .features-title {
+    text-align: start;
+  }
 
   /* Out Team */
+  /* done */
+
+  .team-section .container {
+    padding-inline: 108px;
+  }
+
+  .team-list {
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+
+  .team-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
 
   /* Out Portfolio */
 
@@ -1089,6 +1110,7 @@ legend {
 }
 
 /* -------Desktop------- */
+/* зроблено */
 
 @media screen and (min-width: 1158px) {
   .container {
@@ -1127,19 +1149,69 @@ legend {
   }
 
   /* Hero */
+  /* done */
 
   .hero-section {
-    padding-top: 188px;
-    padding-bottom: 188px;
-    max-width: 1440px;
+    padding-block: 188px;
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/herobackgr.jpg);
   }
+
   .hero-title {
     margin-bottom: 48px;
   }
 
   /* Our Features */
+  /* done */
+
+  .features-section {
+    padding-block: 120px;
+  }
+
+  .features-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+  .features-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .features-text {
+    font-weight: 400;
+  }
+
+  .features-icon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+    height: 112px;
+  }
+  .features-icon {
+    display: block;
+  }
 
   /* Out Team */
+  /* done */
+
+  .team-section .container {
+    padding-inline: 15px;
+  }
+
+  .team-section {
+    padding-block: 120px;
+  }
+  .team-list {
+    gap: 24px;
+  }
+
+  .team-list-item {
+    flex-basis: calc((100% - 24px * 3) / 4);
+  }
 
   /* Out Portfolio */
 
