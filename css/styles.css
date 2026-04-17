@@ -102,9 +102,6 @@ legend {
   display: flex;
   align-items: center;
 }
-.header-address {
-  margin-left: 121px;
-}
 
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -259,6 +256,9 @@ legend {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.menu-item:first-child .mob-menu-list-item {
+  color: #4d5ae5;
+}
 
 .mob-menu-nav-link:hover,
 .mob-menu-nav-link:focus,
@@ -286,6 +286,9 @@ legend {
 .mob-menu-icon {
   fill: #f4f4fd;
   display: block;
+}
+.link-prompt {
+  color: #404bbf;
 }
 
 /* Hero */
@@ -359,7 +362,7 @@ legend {
   align-items: center;
 }
 
-.features-list-item {
+.features-item {
   flex-basis: 100%;
 }
 
@@ -965,6 +968,7 @@ legend {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 12px;
   }
 
   .header-nav-list-container {
@@ -974,7 +978,7 @@ legend {
   }
   .header-logo {
     padding: 24px 0;
-    margin-right: auto;
+    margin-right: 120px;
   }
   .header-nav-list-link {
     font-weight: 500;
@@ -997,6 +1001,7 @@ legend {
   .header-address {
     display: block;
     font-style: normal;
+    margin-left: auto;
   }
   .address-list-item {
     font-weight: 400;
@@ -1010,12 +1015,12 @@ legend {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .address-item:first-child {
+  /* .address-item:first-child {
     padding-block: 16px 6px;
   }
   .address-item:last-child {
     padding-block: 6px 16px;
-  }
+  } */
 
   .address-list-item:hover,
   .address-list-item:focus {
@@ -1033,9 +1038,6 @@ legend {
     height: 4px;
     width: 100%;
     background-color: #404bbf;
-  }
-  .link-prompt {
-    color: #404bbf;
   }
 
   .burger-btn-menu {
