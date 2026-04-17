@@ -69,6 +69,7 @@ legend {
   width: 100%;
   padding: 0 16px;
   margin: 0 auto;
+  /* outline: 2px dotted red; */
 }
 .visually-hidden {
   position: absolute;
@@ -301,14 +302,13 @@ legend {
 }
 
 @media screen and (max-width: 767px) and (min-resolution: 192dpi),
-  screen and (min-width: 767px) and (-webkit-device-pixel-ratio: 2) {
+  screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
   .hero-section {
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-back-mob@2x.jpg);
   }
 }
-
 .hero-title {
   font-weight: 700;
   font-size: 36px;
@@ -518,6 +518,13 @@ legend {
   position: relative;
   overflow: hidden;
 }
+.portfolio-img-thumb img {
+  min-width: 288px;
+  min-height: 280px;
+  object-fit: cover;
+  object-position: top left;
+}
+
 .portfolio-overley-descr {
   padding: 40px 32px;
   position: absolute;
@@ -941,6 +948,7 @@ legend {
   }
 
   /* Header */
+  /* зроблено */
 
   .header-address-container {
     display: flex;
@@ -1080,6 +1088,11 @@ legend {
     flex-basis: calc((100% - 24px) / 2);
   }
 
+  .portfolio-img-thumb img {
+    min-width: 356px;
+    min-height: 300px;
+  }
+
   /* Footer */
   /* done */
 
@@ -1134,7 +1147,6 @@ legend {
     align-items: baseline;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi),
   screen and (min-width: 768px) and (max-width: 1157px) and (-webkit-min-device-pixel-ratio: 2) {
   .hero-section {
@@ -1145,6 +1157,7 @@ legend {
 }
 
 /* -------Desktop------- */
+/* зроблено */
 
 @media screen and (min-width: 1158px) {
   .container {
@@ -1271,6 +1284,11 @@ legend {
       0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
 
+  .portfolio-img-thumb img {
+    min-width: 360px;
+    min-height: 300px;
+  }
+
   /* Footer */
 
   .footer-section {
@@ -1295,9 +1313,11 @@ legend {
   .footer-column-wrap {
     align-items: start;
   }
+
+  /* Modal */
 }
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi),
-  screen and (min-width: 1158px) and (-webkit-device-pixel-ratio: 2) {
+  screen and (min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2) {
   .hero-section {
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
