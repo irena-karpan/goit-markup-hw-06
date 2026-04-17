@@ -458,7 +458,7 @@ legend {
   background-color: #404bbf;
 }
 
-/* Out Portfolio */
+/* Our Portfolio */
 
 .portfolio-section {
   padding-block: 96px;
@@ -1102,7 +1102,16 @@ legend {
     flex-basis: calc((100% - 24px) / 2);
   }
 
-  /* Out Portfolio */
+  /* Our Portfolio */
+  /* done */
+
+  .portfolio-list {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .portfolio-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
 
   /* Footer */
 
@@ -1214,6 +1223,17 @@ legend {
   }
 
   /* Out Portfolio */
+
+  .portfolio-section {
+    padding-block: 120px;
+  }
+
+  .portfolio-list {
+    row-gap: 48px;
+  }
+  .portfolio-list-item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+  }
 
   /* Footer */
 
