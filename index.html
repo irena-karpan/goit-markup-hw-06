@@ -58,7 +58,7 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="burger-btn-menu">
+        <button type="button" class="burger-btn-menu" data-mobile-menu-open>
           <svg class="burger-menu-icon" width="24" height="24">
             <use href="./images/icons.svg#burger-icon"></use>
           </svg>
@@ -70,7 +70,9 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-butn">Order Service</button>
+          <button type="button" class="hero-butn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -503,9 +505,9 @@
     </footer>
 
     <!-- mobile menu section -->
-    <div class="mobile-menu">
+    <div class="mobile-menu" data-mobile-menu>
       <div class="container mobile-menu-container">
-        <button type="button" class="close-icon-btn">
+        <button type="button" class="close-icon-btn" data-mobile-menu-close>
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#close-icon"></use>
           </svg>
@@ -573,9 +575,9 @@
     </div>
 
     <!-- Modal window -->
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="close-icon-btn">
+        <button type="button" class="close-icon-btn" data-modal-close>
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#close-icon"></use>
           </svg>
@@ -661,5 +663,7 @@
         </form>
       </div>
     </div>
+    <script src="./script/modal.js"></script>
+    <script src="./script/mobile-menu.js"></script>
   </body>
 </html>
