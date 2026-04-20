@@ -171,7 +171,7 @@ legend {
   pointer-events: auto;
 }
 .mobile-menu:not(.is-open) .mobile-menu-container {
-  transform: translate(-50%, -50%) scale(1.5);
+  transform: scale(0.5);
 }
 
 .mobile-menu-container {
@@ -180,6 +180,10 @@ legend {
   height: 100%;
   display: flex;
   flex-direction: column;
+
+  transition-property: transform, scale;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon-btn {
